@@ -30,7 +30,7 @@ export default class App extends React.Component {
         <Route path="/">
           <Year2019 />
         </Route>
-        <footer style={{fontSize: "25px"}}><a  href=""> GitHub </a></footer>
+        <footer style={{fontSize: "25px"}}><a  href="https://github.com/bkstephen/yposxeseis"> GitHub </a></footer>
       </Router>
     );
   }

@@ -12,6 +12,7 @@
 ### - Add it in the App.js and add the following attributes: Id (increment by 1), description, and progress in string format eg. "75%"
 ### - Make a pull request directly to master
 
+<br/>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
