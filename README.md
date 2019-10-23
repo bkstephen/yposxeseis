@@ -1,15 +1,16 @@
 ### https://yposxeseis.netlify.com/
 
 ## Άμα θέλεις να βοηθήσεις με την σελίδα κάνε τα παρακάτω
-## -	Κάνε import το component <Yposxeseis/> από yposxeseis.js 
-## -	Φτιάξε ένα copy του στο App.js και βάλε τις παρακάτω attributes: Id (αύξησε κατά 1), description, και progress σε string format eg. "75%"
-## -	Κάνε pull request κατευθείαν στο master
+# -	Κάνε import το component <Yposxeseis/> από yposxeseis.js 
+# -	Φτιάξε ένα copy του στο App.js και βάλε τις παρακάτω attributes: Id (αύξησε κατά 1), description, και progress σε string format eg. "75%"
+# -	Κάνε pull request κατευθείαν στο master
 
+<br/>
 
 ## If you want to contribute to this website do the following:
-## - Import the component <Yposxeseis/> form the yposxeseis.js file
-## - Add it in the App.js and add the following attributes: Id (increment by 1), description, and progress in string format eg. "75%"
-## - Make a pull request directly to master
+# - Import the component <Yposxeseis/> form the yposxeseis.js file
+# - Add it in the App.js and add the following attributes: Id (increment by 1), description, and progress in string format eg. "75%"
+# - Make a pull request directly to master
 
 
 
