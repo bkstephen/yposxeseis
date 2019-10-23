@@ -39,7 +39,7 @@ export default class Yposxeseis extends React.Component {
                         </div>
                         
                     </div>
-                    {this.state.showPic ? <img style={{ marginLeft: "4%", width: "80px" }} src={require("../img/happy.PNG")} /> : <div></div>}
+                    {this.state.showPic ? <img style={{ marginLeft: "1%", width: "80px" }} src={require("../img/happy.PNG")} /> : <div></div>}
                 </div>
                 <div style={{ color: "black" }} className="card-body" >
                     <p className="card-text">
