@@ -26,18 +26,16 @@ export default class Yposxeseis extends React.Component {
                     <div id={this.props.id}>
 
                         <div className="progress">
-                            <div className="progress-bar progress-bar-striped bg-info progress-bar-animated"
+                            <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                 role="progressbar"
                                 aria-valuenow={this.state.progress}
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                                 style={{ width: this.state.progress }}>
-                            </div>
-
-                            <div style={{ fontSize: "100%" }}>{this.state.progress}</div>
+                            </div>                   
 
                         </div>
-                        
+                        <div style={{ position: "relative", fontSize: "150%" }}>{this.state.progress}</div>
                     </div>
                     {this.state.showPic ? <img style={{ marginLeft: "1%", width: "80px" }} src={require("../img/happy.PNG")} /> : <div></div>}
                 </div>
