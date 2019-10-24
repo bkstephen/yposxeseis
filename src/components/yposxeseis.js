@@ -1,4 +1,6 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
+import ProgressBar  from 'react-bootstrap/ProgressBar';
 
 export default class Yposxeseis extends React.Component {
     constructor(props) {
@@ -10,41 +12,26 @@ export default class Yposxeseis extends React.Component {
         }
     }
     componentDidMount() {
-        if (this.state.progress == "100%") {
+        if (this.state.progress === 100) {
             this.setState({ showPic: true })
             const list = document.getElementById(this.props.id)
-            list.innerHTML = 'ΟΛΟΚΛΗΡΏΘΗΚΕ    100% '
-            list.style.color = "#20c997"
         }
     }
     render() {
         return (
-            <div className="card bg-light mb-3" style={{ display: "table", margin: "auto", width: "80%", position: "relative" }}>
-                <div className="card-header" >
-
-                    <h5 className="card-title">Πρόοδος:</h5>
-                    <div id={this.props.id}>
-
-                        <div className="progress">
-                            <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
-                                role="progressbar"
-                                aria-valuenow={this.state.progress}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style={{ width: this.state.progress }}>
-                            </div>                   
-
-                        </div>
-                        <div style={{ position: "relative", fontSize: "150%" }}>{this.state.progress}</div>
-                    </div>
-                    {this.state.showPic ? <img style={{ marginLeft: "1%", width: "80px" }} src={require("../img/happy.PNG")} /> : <div></div>}
-                </div>
-                <div style={{ color: "black" }} className="card-body" >
-                    <p className="card-text">
+            <Card className="mb-3" style={{ width: '80%', margin: 'auto', position: 'relative'}}>
+                <Card.Header>
+                    <Card.Title>Πρόοδος:</Card.Title>
+                        {this.state.progress === 100 ? <div class="text-success">ΟΛΟΚΛΗΡΏΘΗΚΕ 100% </div> : <ProgressBar striped animated variant="success" now={this.state.progress} label={`${this.state.progress}%`} /> }
+                        <br />
+                        {this.state.showPic ? <Card.Img variant="top" style={{ width: '80px' }} src={require("../img/happy.PNG")} /> : <div></div>}
+                    </Card.Header>
+                <Card.Body>
+                    <Card.Text>
                         {this.state.description}
-                    </p>
-                </div>
-            </div>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
         )
     }
 }
